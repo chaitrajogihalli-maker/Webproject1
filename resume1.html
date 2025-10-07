@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<header>
+    <h1>Nanda J K</h1>
+     <nav>
+        <a href="index.html">Home</a> |
+            <a href="resume1.html">Resume</a> |
+            <a href="biodata1.html">Bio-data</a>
+        </nav>
+        <script>
+    const links=document.querySelectorAll("nav a");
+    links.forEach(link =>{
+        if(link.href ===window.location.href){
+            link.classList.add("active");
+        }
+    });
+</script>
+</header>
+<body>
+    <section class="resume">
+        <h2>Career Objectives</h2>
+    <p>Motivated and detail-oriented Computer Science & Engineering student with a strong foundation in software development,data structures,and web technologies.Seeking an entry-level role to apply my technical and problem-solving skills in a dynamic organisation.</p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages: </strong>Java,Python,C</li>
+            <li><strong>Web Technologies: </strong>HTML,CSS,Javascript</li>
+            <li><strong>Tools & Platforms: </strong>Git,VS Code,Pycharm,Netbeans</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <p>Dairy Management System| HTML,CSS,JS<br>
+        <ul>-Designed for responsible Management of Dairy databases.</ul></p>
+        <p>Online Voting System|HTML,CSS,JS,MySql,PHP<br>
+        <ul>-Designed for online mode voting.</ul>
+        <ul>-Ensure Secure login and register features.</ul></p>
+     <h2>Education</h2>
+        <p>B.E. in Computer Science & Engineering from Visvesvaraya Technological University,Belgaum 2023-2027</p>
+        <p>CGPA: 8.18/10</p>
+        <h2>Languages</h2>
+        <p><li>English</li>
+        <li>Kannada</li>
+    <li>Hindi</li></p>
+    <h2>Hobbies/Interests</h2>
+    <p>Drawing and listening music</p>
+    </section>
+<script src="script.js"></script>
+
+
+    <footer>
+        <p>&copy; 2025 Nanda</p>
+    </footer>
+</body>
+</html>
+

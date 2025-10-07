@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio-data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>Chaitra A J</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+            <a href="resume.html">Resume</a> |
+            <a href="biodata.html">Bio-data</a>
+        </nav>
+        <script>
+    const links=document.querySelectorAll("nav a");
+    links.forEach(link =>{
+        if(link.href ===window.location.href){
+            link.classList.add("active");
+        }
+    });
+</script>
+</header>
+<body>
+    <section class="biodata">
+        <h2>Bio-data</h2>
+    <div class="photo-section">
+        <img src="profile.jpg" alt="My Photo"> 
+    </div>
+        <table>
+            <tr><td>Name:</td><td>Chaitra A J</td></tr>
+            <tr><td>Date of Birth:</td><td>21 August 2005</td></tr>
+            <tr><td>Gender:</td><td>Female</td></tr>
+            <tr><td>Nationality:</td><td>Indian</td></tr>
+            <tr><td>Address:</td><td>XYZ,ABC(TQ),DEFGH(Dist)</td></tr>
+            <tr><td>Phone:</td><td>1234567899</td></tr>
+            <tr><td>Email:</td><td>123student@gmail.com</td></tr>
+            <tr><td>Marital Status:</td><td>Single</td></tr>
+            <tr><td>Languages Known:</td><td>English,Kannada,Hindi</td></tr>
+        </table>
+    </section>
+</body>
+    <footer>
+        <p>&copy; 2025 Chaitra</p>
+    </footer>
+</body>
+</html>

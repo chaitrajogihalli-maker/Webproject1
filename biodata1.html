@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio-data</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<header>
+    <h1>Nanda J K</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+            <a href="resume1.html">Resume</a> |
+            <a href="biodata1.html">Bio-data</a>
+        </nav>
+        <script>
+    const links=document.querySelectorAll("nav a");
+    links.forEach(link =>{
+        if(link.href ===window.location.href){
+            link.classList.add("active");
+        }
+    });
+</script>
+</header>
+<body>
+    <section class="biodata">
+        <h2>Bio-data</h2>
+    <div class="photo-section">
+        <img src="profile.jpg" alt="My Photo"> 
+    </div>
+        <table>
+            <tr><td>Name:</td><td>Nanda J K</td></tr>
+            <tr><td>Date of Birth:</td><td>25 Sept 2004</td></tr>
+            <tr><td>Gender:</td><td>Female</td></tr>
+            <tr><td>Nationality:</td><td>Indian</td></tr>
+            <tr><td>Address:</td><td>ABC,DEF(TQ),GBIRZ(Dist)</td></tr>
+            <tr><td>Phone:</td><td>9876543211</td></tr>
+            <tr><td>Email:</td><td>456student@gmail.com</td></tr>
+            <tr><td>Marital Status:</td><td>Single</td></tr>
+            <tr><td>Languages Known:</td><td>English,Kannada,Hindi</td></tr>
+        </table>
+    </section>
+</body>
+    <footer>
+        <p>&copy; 2025 Nanda</p>
+    </footer>
+</body>
+</html>
